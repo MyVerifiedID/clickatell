@@ -50,7 +50,7 @@ module Clickatell
     # a session_id if successful which can be used in subsequent
     # API calls.
     def authenticate(api_id, username, password)
-      response = execute_command('auth', 'http',
+      response = execute_command('auth', 'https',
         :api_id => api_id,
         :user => username,
         :password => password
